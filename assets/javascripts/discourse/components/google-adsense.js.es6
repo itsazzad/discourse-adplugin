@@ -35,13 +35,50 @@ function loadAdsense() {
 }
 
 var data = {
-  "topic-list-top" : {},
-  "topic-above-post-stream" : {},
-  "topic-above-suggested" : {},
-  "post-bottom" : {}
+  "topic-2nd-reply-left": {},
+  "topic-right": {},
+  "search-right": {},
+  "topic-list-top": {},
+  "topic-above-post-stream": {},
+  "topic-above-suggested": {},
+  "post-bottom": {}
 };
 
 if (Discourse.SiteSettings.adsense_publisher_code) {
+
+  if (!mobileView && Discourse.SiteSettings.adsense_topic_2nd_reply_left_code) {
+    data["topic-2nd-reply-left"]["ad_code"] = Discourse.SiteSettings.adsense_topic_2nd_reply_left_code;
+    data["topic-2nd-reply-left"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_topic_2nd_reply_left_ad_sizes);
+    data["topic-2nd-reply-left"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_topic_2nd_reply_left_ad_sizes);
+  }
+  if (mobileView && Discourse.SiteSettings.adsense_mobile_topic_2nd_reply_left_code) {
+    data["topic-2nd-reply-left"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_topic_2nd_reply_left_code;
+    data["topic-2nd-reply-left"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_topic_2nd_reply_left_ad_size);
+    data["topic-2nd-reply-left"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_topic_2nd_reply_left_ad_size);
+  }
+
+  if (!mobileView && Discourse.SiteSettings.adsense_topic_right_code) {
+    data["topic-right"]["ad_code"] = Discourse.SiteSettings.adsense_topic_right_code;
+    data["topic-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_topic_right_ad_sizes);
+    data["topic-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_topic_right_ad_sizes);
+  }
+  if (mobileView && Discourse.SiteSettings.adsense_mobile_topic_right_code) {
+    data["topic-right"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_topic_right_code;
+    data["topic-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_topic_right_ad_size);
+    data["topic-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_topic_right_ad_size);
+  }
+
+  if (!mobileView && Discourse.SiteSettings.adsense_search_right_code) {
+    data["search-right"]["ad_code"] = Discourse.SiteSettings.adsense_search_right_code;
+    data["search-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_search_right_ad_sizes);
+    data["search-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_search_right_ad_sizes);
+  }
+  if (mobileView && Discourse.SiteSettings.adsense_mobile_search_right_code) {
+    data["search-right"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_search_right_code;
+    data["search-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_search_right_ad_size);
+    data["search-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_search_right_ad_size);
+  }
+
   if (!mobileView && Discourse.SiteSettings.adsense_topic_list_top_code) {
     data["topic-list-top"]["ad_code"] = Discourse.SiteSettings.adsense_topic_list_top_code;
     data["topic-list-top"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_topic_list_top_ad_sizes);

@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+  {{#if siteSettings.adsense_mobile_topic_2nd_reply_left_code}}
+    {{google-adsense placement="topic-2nd-reply-left" listLoading=listLoading}}
+  {{/if}}
+{{else}}
+  {{#if siteSettings.adsense_topic_2nd_reply_left_code}}
+    {{google-adsense placement="topic-2nd-reply-left" listLoading=listLoading}}
+  {{/if}}
+{{/if}}

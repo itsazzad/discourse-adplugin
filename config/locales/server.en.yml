@@ -34,6 +34,22 @@ en:
 
     adsense_publisher_code: "Your publisher ID. Enter only the number, excluding 'pub-'."
     adsense_through_trust_level: "Show your ads to users based on trust levels. Users with trust level higher than this value will not see ads."
+
+    adsense_topic_2nd_reply_left_code: "Enter code of the ad unit to display at topic 2nd reply left location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_mobile_topic_2nd_reply_left_code: "Enter code of the ad unit to display mobile ads at topic 2nd reply left location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_topic_2nd_reply_left_ad_sizes: "Choose your ad size"
+    adsense_mobile_topic_2nd_reply_left_ad_size: "Choose your ad size"
+
+    adsense_topic_right_code: "Enter code of the ad unit to display at topic right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_mobile_topic_right_code: "Enter code of the ad unit to display mobile ads at topic right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_topic_right_ad_sizes: "Choose your ad size"
+    adsense_mobile_topic_right_ad_size: "Choose your ad size"
+
+    adsense_search_right_code: "Enter code of the ad unit to display at search right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_mobile_search_right_code: "Enter code of the ad unit to display mobile ads at search right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_search_right_ad_sizes: "Choose your ad size"
+    adsense_mobile_search_right_ad_size: "Choose your ad size"
+
     adsense_topic_list_top_code: "Enter code of the ad unit to display at topic list top location. This is the number assigned to the ad unit, not the JavaScript code."
     adsense_mobile_topic_list_top_code: "Enter code of the ad unit to display mobile ads at topic list top location. This is the number assigned to the ad unit, not the JavaScript code."
     adsense_topic_list_top_ad_sizes: "Choose your ad size"
