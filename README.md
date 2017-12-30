@@ -106,7 +106,7 @@ Location Name | Description
 Topic List Top | Ad will appear at the header of Discourse homepage
 Topic Above Post Stream | Ad will appear in the header of all Discourse forum topics
 Topic Above Suggested | Ad will appear in the footer above suggested topics of all Discourse forum topics
-Post Bottom & Nth Post | Ad will appear on the stipulated nth post within a topic.  So if you have 5 posts in a topic and you want the ad to display after on the 2nd post, put 2 in ```ad_platform_nth_post_code```.
+Post Bottom & Nth Post | Ad will appear on the stipulated nth post within a topic.  So if you have 5 posts in a topic and you want the ad to display after on the nth post, put N in ```ad_platform_nth_post_code```.
 
 
 ![](https://www.dropbox.com/sc/rm5bcn8c85niul1/AAAUVW-hn56XtCl_XTNlE19Ra?dl=1)

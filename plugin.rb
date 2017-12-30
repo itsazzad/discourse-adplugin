@@ -21,6 +21,16 @@ register_css <<CSS
   clear: both;
 }
 
+.google-adsense.adsense-post-before {
+  width: 180px;
+  float: left;
+}
+
+#post_2 .topic-body {
+  width: 410px;
+  float: left;
+}
+
 .google-adsense.adsense-responsive {
   width: 100%;
 }
