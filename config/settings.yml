@@ -15,7 +15,7 @@ adsense_plugin:
     regex: '^[\d]*$'
   adsense_post_before_ad_sizes:
     client: true
-    default: '180*150 - small rectangle'
+    default: '300*250 - medium rectangle'
     type: enum
     choices: &adsense_choices
       - responsive
