@@ -27,7 +27,7 @@ register_css <<CSS
 }
 
 #post_2 .topic-body {
-  width: 410px;
+  width: 510px;
   float: left;
 }
 

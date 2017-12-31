@@ -15,7 +15,7 @@ adsense_plugin:
     regex: '^[\d]*$'
   adsense_post_before_ad_sizes:
     client: true
-    default: 'responsive'
+    default: '180*150 - small rectangle'
     type: enum
     choices: &adsense_choices
       - responsive
@@ -57,7 +57,7 @@ adsense_plugin:
     regex: '^[\d]*$'
   adsense_topic_right_ad_sizes:
     client: true
-    default: 'responsive'
+    default: '160*600 - wide skyscraper'
     type: enum
     choices: &adsense_choices
       - responsive
@@ -95,7 +95,7 @@ adsense_plugin:
     regex: '^[\d]*$'
   adsense_search_right_ad_sizes:
     client: true
-    default: 'responsive'
+    default: '160*600 - wide skyscraper'
     type: enum
     choices: &adsense_choices
       - responsive
