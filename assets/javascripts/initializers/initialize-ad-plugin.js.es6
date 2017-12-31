@@ -1,5 +1,4 @@
 import PostModel from 'discourse/models/post';
-import PostStreamModel from 'discourse/models/post-stream';
 import { withPluginApi } from 'discourse/lib/plugin-api';
 
 export default {
@@ -7,12 +6,6 @@ export default {
   initialize(container) {
     const siteSettings = container.lookup('site-settings:main');
 
-    PostStreamModel.reopen({
-      postModelAdsense: function() {
-        console.error(this);
-        return true;
-      },
-    });
     PostModel.reopen({
       postFixedCountAdsense: function() {
         return this.isOnlyNthPost(parseInt(siteSettings.adsense_only_nth_reply_code));
@@ -48,19 +41,6 @@ export default {
     });
 
     withPluginApi('0.1', api => {
-      api.decorateWidget('post-stream:after', dec => {
-        console.error(dec);
-
-        if (dec.canConnectComponent) {
-          return dec.connect({ component: 'adplugin-post-stream-after-container', context: 'model' });
-        }
-
-        // Old way for backwards compatibility
-        return dec.connect({
-          templateName: 'connectors/post-stream-after/discourse-adplugin',
-          context: 'model'
-        });
-      });
       api.decorateWidget('post:before', dec => {
 
         if (dec.canConnectComponent) {

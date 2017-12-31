@@ -41,15 +41,15 @@ en:
     adsense_mobile_post_before_ad_size: "Choose your ad size"
     adsense_only_nth_reply_code: "Show an ad after only N-th reply, where N is this value."
 
-    adsense_topic_right_code: "Enter code of the ad unit to display at topic right location. This is the number assigned to the ad unit, not the JavaScript code."
-    adsense_mobile_topic_right_code: "Enter code of the ad unit to display mobile ads at topic right location. This is the number assigned to the ad unit, not the JavaScript code."
-    adsense_topic_right_ad_sizes: "Choose your ad size"
-    adsense_mobile_topic_right_ad_size: "Choose your ad size"
+    adsense_topic_above_posts_code: "Enter code of the ad unit to display at topic right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_mobile_topic_above_posts_code: "Enter code of the ad unit to display mobile ads at topic right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_topic_above_posts_ad_sizes: "Choose your ad size"
+    adsense_mobile_topic_above_posts_ad_size: "Choose your ad size"
 
-    adsense_search_right_code: "Enter code of the ad unit to display at search right location. This is the number assigned to the ad unit, not the JavaScript code."
-    adsense_mobile_search_right_code: "Enter code of the ad unit to display mobile ads at search right location. This is the number assigned to the ad unit, not the JavaScript code."
-    adsense_search_right_ad_sizes: "Choose your ad size"
-    adsense_mobile_search_right_ad_size: "Choose your ad size"
+    adsense_above_footer_code: "Enter code of the ad unit to display at search right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_mobile_above_footer_code: "Enter code of the ad unit to display mobile ads at search right location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_above_footer_ad_sizes: "Choose your ad size"
+    adsense_mobile_above_footer_ad_size: "Choose your ad size"
 
     adsense_topic_list_top_code: "Enter code of the ad unit to display at topic list top location. This is the number assigned to the ad unit, not the JavaScript code."
     adsense_mobile_topic_list_top_code: "Enter code of the ad unit to display mobile ads at topic list top location. This is the number assigned to the ad unit, not the JavaScript code."

@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+    {{#if siteSettings.adsense_mobile_topic_above_posts_code}}
+        {{google-adsense placement="topic-above-posts"}}
+    {{/if}}
+{{else}}
+    {{#if siteSettings.adsense_topic_above_posts_code}}
+        {{google-adsense placement="topic-above-posts"}}
+    {{/if}}
+{{/if}}

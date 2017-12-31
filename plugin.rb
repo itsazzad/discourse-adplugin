@@ -2,6 +2,7 @@
 # about: Ad Plugin for Discourse
 # version: 1.0.2
 # authors: Vi and Sarah (@ladydanger and @cyberkoi)
+# developer: Sazzad Tushar Khan (itsazzad@gmail.com)
 
 register_css <<CSS
 

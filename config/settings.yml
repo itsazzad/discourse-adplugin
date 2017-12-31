@@ -50,12 +50,12 @@ adsense_plugin:
     default: 2
     min: 1
 
-  adsense_topic_right_code:
+  adsense_topic_above_posts_code:
     client: true
     default: ''
     max: 50
     regex: '^[\d]*$'
-  adsense_topic_right_ad_sizes:
+  adsense_topic_above_posts_ad_sizes:
     client: true
     default: '160*600 - wide skyscraper'
     type: enum
@@ -77,23 +77,23 @@ adsense_plugin:
       - 300*600 - half page ad
       - 320*100 - large mobile banner
       - 690*250
-  adsense_mobile_topic_right_code:
+  adsense_mobile_topic_above_posts_code:
     client: true
     default: ''
     max: 50
     regex: '^[\d]*$'
-  adsense_mobile_topic_right_ad_size:
+  adsense_mobile_topic_above_posts_ad_size:
     client: true
     default: 'responsive'
     type: enum
     choices: *adsense_choices
 
-  adsense_search_right_code:
+  adsense_above_footer_code:
     client: true
     default: ''
     max: 50
     regex: '^[\d]*$'
-  adsense_search_right_ad_sizes:
+  adsense_above_footer_ad_sizes:
     client: true
     default: '160*600 - wide skyscraper'
     type: enum
@@ -115,12 +115,12 @@ adsense_plugin:
       - 300*600 - half page ad
       - 320*100 - large mobile banner
       - 690*250
-  adsense_mobile_search_right_code:
+  adsense_mobile_above_footer_code:
     client: true
     default: ''
     max: 50
     regex: '^[\d]*$'
-  adsense_mobile_search_right_ad_size:
+  adsense_mobile_above_footer_ad_size:
     client: true
     default: 'responsive'
     type: enum

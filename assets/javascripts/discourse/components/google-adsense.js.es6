@@ -36,8 +36,8 @@ function loadAdsense() {
 
 var data = {
   "post-before": {},
-  "topic-right": {},
-  "search-right": {},
+  "topic-above-posts": {},
+  "above-footer": {},
   "topic-list-top": {},
   "topic-above-post-stream": {},
   "topic-above-suggested": {},
@@ -57,26 +57,26 @@ if (Discourse.SiteSettings.adsense_publisher_code) {
     data["post-before"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_post_before_ad_size);
   }
 
-  if (!mobileView && Discourse.SiteSettings.adsense_topic_right_code) {
-    data["topic-right"]["ad_code"] = Discourse.SiteSettings.adsense_topic_right_code;
-    data["topic-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_topic_right_ad_sizes);
-    data["topic-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_topic_right_ad_sizes);
+  if (!mobileView && Discourse.SiteSettings.adsense_topic_above_posts_code) {
+    data["topic-above-posts"]["ad_code"] = Discourse.SiteSettings.adsense_topic_above_posts_code;
+    data["topic-above-posts"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_topic_above_posts_ad_sizes);
+    data["topic-above-posts"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_topic_above_posts_ad_sizes);
   }
-  if (mobileView && Discourse.SiteSettings.adsense_mobile_topic_right_code) {
-    data["topic-right"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_topic_right_code;
-    data["topic-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_topic_right_ad_size);
-    data["topic-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_topic_right_ad_size);
+  if (mobileView && Discourse.SiteSettings.adsense_mobile_topic_above_posts_code) {
+    data["topic-above-posts"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_topic_above_posts_code;
+    data["topic-above-posts"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_topic_above_posts_ad_size);
+    data["topic-above-posts"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_topic_above_posts_ad_size);
   }
 
-  if (!mobileView && Discourse.SiteSettings.adsense_search_right_code) {
-    data["search-right"]["ad_code"] = Discourse.SiteSettings.adsense_search_right_code;
-    data["search-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_search_right_ad_sizes);
-    data["search-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_search_right_ad_sizes);
+  if (!mobileView && Discourse.SiteSettings.adsense_above_footer_code) {
+    data["above-footer"]["ad_code"] = Discourse.SiteSettings.adsense_above_footer_code;
+    data["above-footer"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_above_footer_ad_sizes);
+    data["above-footer"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_above_footer_ad_sizes);
   }
-  if (mobileView && Discourse.SiteSettings.adsense_mobile_search_right_code) {
-    data["search-right"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_search_right_code;
-    data["search-right"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_search_right_ad_size);
-    data["search-right"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_search_right_ad_size);
+  if (mobileView && Discourse.SiteSettings.adsense_mobile_above_footer_code) {
+    data["above-footer"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_above_footer_code;
+    data["above-footer"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_above_footer_ad_size);
+    data["above-footer"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_above_footer_ad_size);
   }
 
   if (!mobileView && Discourse.SiteSettings.adsense_topic_list_top_code) {
