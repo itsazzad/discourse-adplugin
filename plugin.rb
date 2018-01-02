@@ -37,7 +37,7 @@ register_css <<CSS
 }
 
 .google-adsense .google-adsense-label {
-  width: 728px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -61,6 +61,18 @@ register_css <<CSS
 
 .google-adsense .google-adsense-content {
   margin: 0 auto;
+}
+
+.google-adsense.adsense-above-footer {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
 }
 
 .amazon-product-links {
