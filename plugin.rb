@@ -20,7 +20,7 @@ register_css <<CSS
   padding: 3px 0;
   margin-bottom: 10px;
   clear: both;
-  border: 1px solid red;
+  background: #eee;
 }
 
 .google-adsense.adsense-post-before {
@@ -29,7 +29,7 @@ register_css <<CSS
 }
 
 #post_2 .topic-body {
-  width: 510px;
+  width: 390px;
   float: left;
 }
 
