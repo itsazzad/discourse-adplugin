@@ -41,7 +41,7 @@ export default {
     });
 
     withPluginApi('0.1', api => {
-      api.decorateWidget('post:before', dec => {
+      api.decorateWidget('post-meta-data:after', dec => {
 
         if (dec.canConnectComponent) {
           return dec.connect({ component: 'adplugin-nth-container', context: 'model' });

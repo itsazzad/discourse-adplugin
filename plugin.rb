@@ -21,15 +21,14 @@ register_css <<CSS
   margin-bottom: 10px;
   clear: both;
 }
-.post-stream .topic-post:nth-of-type(2) {
-  display: flex;
-  justify-content: flex-start;
-}
-#post_2 .topic-body {
-  width: 390px;
+
+#post_2 .topic-meta-data,
+#post_2 .topic-body .regular{
   float: left;
 }
-
+#post_2 .topic-meta-data{
+  width: 300px;
+}
 .google-adsense.adsense-responsive {
   width: 100%;
 }
