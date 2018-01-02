@@ -29,6 +29,11 @@ register_css <<CSS
 #post_2 .topic-meta-data{
   width: 300px;
 }
+.google-adsense.adsense-topic-above-posts {
+  position: absolute;
+  left: 760px;
+}
+
 .google-adsense.adsense-responsive {
   width: 100%;
 }
