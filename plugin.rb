@@ -20,14 +20,11 @@ register_css <<CSS
   padding: 3px 0;
   margin-bottom: 10px;
   clear: both;
-  background: #eee;
 }
-
-.google-adsense.adsense-post-before {
-  width: 180px;
-  float: left;
+.post-stream .topic-post:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-start;
 }
-
 #post_2 .topic-body {
   width: 390px;
   float: left;
