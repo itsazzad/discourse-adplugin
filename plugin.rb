@@ -20,6 +20,7 @@ register_css <<CSS
   padding: 3px 0;
   margin-bottom: 10px;
   clear: both;
+  border: 1px solid red;
 }
 
 .google-adsense.adsense-post-before {
@@ -72,7 +73,6 @@ register_css <<CSS
   padding: 20px 0;
   overflow-x: hidden;
   overflow-y: auto;
-  border-right: 1px solid #eee;
 }
 
 .amazon-product-links {
