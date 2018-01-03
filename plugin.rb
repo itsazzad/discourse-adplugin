@@ -29,10 +29,20 @@ register_css <<CSS
 #post_2 .topic-meta-data{
   width: 300px;
 }
-.google-adsense.adsense-topic-above-posts {
+.google-adsense.adsense-topic-above-posts,
+.google-adsense.adsense-discovery-list-container-top {
   position: absolute;
+}
+.google-adsense.adsense-topic-above-posts {
   left: 760px;
 }
+.google-adsense.adsense-discovery-list-container-top {
+  left: 1110px;
+}
+.discovery-list-container-top-outlet.discourse-adplugin {
+  position: relative;
+}
+
 
 .google-adsense.adsense-responsive {
   width: 100%;

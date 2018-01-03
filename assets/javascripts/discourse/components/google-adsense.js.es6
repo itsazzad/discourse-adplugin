@@ -38,6 +38,7 @@ var data = {
   "post-before": {},
   "topic-above-posts": {},
   "above-footer": {},
+  "discovery-list-container-top": {},
   "topic-list-top": {},
   "topic-above-post-stream": {},
   "topic-above-suggested": {},
@@ -77,6 +78,17 @@ if (Discourse.SiteSettings.adsense_publisher_code) {
     data["above-footer"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_above_footer_code;
     data["above-footer"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_above_footer_ad_size);
     data["above-footer"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_above_footer_ad_size);
+  }
+
+  if (!mobileView && Discourse.SiteSettings.adsense_discovery_list_container_top_code) {
+      data["discovery-list-container-top"]["ad_code"] = Discourse.SiteSettings.adsense_discovery_list_container_top_code;
+      data["discovery-list-container-top"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_discovery_list_container_top_ad_sizes);
+      data["discovery-list-container-top"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_discovery_list_container_top_ad_sizes);
+  }
+  if (mobileView && Discourse.SiteSettings.adsense_mobile_discovery_list_container_top_code) {
+      data["discovery-list-container-top"]["ad_code"] = Discourse.SiteSettings.adsense_mobile_discovery_list_container_top_code;
+      data["discovery-list-container-top"]["ad_width"] = parseAdWidth(Discourse.SiteSettings.adsense_mobile_discovery_list_container_top_ad_size);
+      data["discovery-list-container-top"]["ad_height"] = parseAdHeight(Discourse.SiteSettings.adsense_mobile_discovery_list_container_top_ad_size);
   }
 
   if (!mobileView && Discourse.SiteSettings.adsense_topic_list_top_code) {

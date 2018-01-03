@@ -51,6 +51,11 @@ en:
     adsense_above_footer_ad_sizes: "Choose your ad size"
     adsense_mobile_above_footer_ad_size: "Choose your ad size"
 
+    adsense_discovery_list_container_top_code: "Enter code of the ad unit to display at discovery list container top location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_mobile_discovery_list_container_top_code: "Enter code of the ad unit to display mobile ads at discovery list container top location. This is the number assigned to the ad unit, not the JavaScript code."
+    adsense_discovery_list_container_top_ad_sizes: "Choose your ad size"
+    adsense_mobile_discovery_list_container_top_ad_size: "Choose your ad size"
+
     adsense_topic_list_top_code: "Enter code of the ad unit to display at topic list top location. This is the number assigned to the ad unit, not the JavaScript code."
     adsense_mobile_topic_list_top_code: "Enter code of the ad unit to display mobile ads at topic list top location. This is the number assigned to the ad unit, not the JavaScript code."
     adsense_topic_list_top_ad_sizes: "Choose your ad size"

@@ -126,6 +126,44 @@ adsense_plugin:
     type: enum
     choices: *adsense_choices
 
+  adsense_discovery_list_container_top_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_discovery_list_container_top_ad_sizes:
+    client: true
+    default: '160*600 - wide skyscraper'
+    type: enum
+    choices: &adsense_choices
+      - responsive
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+      - 690*250
+  adsense_mobile_discovery_list_container_top_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_discovery_list_container_top_ad_size:
+    client: true
+    default: 'responsive'
+    type: enum
+    choices: *adsense_choices
+
   adsense_topic_list_top_code:
     client: true
     default: ''
