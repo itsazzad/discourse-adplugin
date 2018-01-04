@@ -42,12 +42,11 @@ register_css <<CSS
   position: absolute;
 }
 .google-adsense.adsense-topic-above-posts {
-  left: 760px;
-  padding-left: 3px;
+  right: 0;
 }
 .google-adsense.adsense-discovery-list-container-top {
   left: 1110px;
-  top: 161px;
+  top: 142px;
   padding-left: 3px;
 }
 .discovery-list-container-top-outlet.discourse-adplugin {
