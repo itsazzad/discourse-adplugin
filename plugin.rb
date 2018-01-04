@@ -30,8 +30,8 @@ register_css <<CSS
   width: 300px;
 }
 #post_2 .topic-body .regular {
-  width: 387px;
-  padding-left: 3px;
+  width: 385px;
+  padding-left: 5px;
 }
 #post_2 .topic-meta-data .post-info {
   position: relative;
