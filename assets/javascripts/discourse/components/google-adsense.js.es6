@@ -144,9 +144,9 @@ export default Ember.Component.extend({
   adRequested: false,
 
   init() {
-    this.set('ad_width', data[this.placement]["ad_width"] );
-    this.set('ad_height', data[this.placement]["ad_height"] );
-    this.set('ad_code', data[this.placement]["ad_code"] );
+    this.set('ad_width', this.code_from ? data[this.code_from]["ad_width"] : data[this.placement]["ad_width"] );
+    this.set('ad_height', this.code_from ? data[this.code_from]["ad_height"] : data[this.placement]["ad_height"] );
+    this.set('ad_code', this.code_from ? data[this.code_from]["ad_code"] : data[this.placement]["ad_code"] );
     this._super();
   },
 
@@ -183,7 +183,7 @@ export default Ember.Component.extend({
   }.property('ad_width'),
 
   classForSlot: function() {
-    return `adsense-${this.get('placement')}`.htmlSafe();
+    return `adsense-${this.get('code_from') ? this.get('code_from') : this.get('placement')}`.htmlSafe();
   }.property('placement'),
 
   autoAdFormat: function() {

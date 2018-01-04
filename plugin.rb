@@ -17,7 +17,7 @@ register_css <<CSS
 }
 
 .google-adsense {
-  padding: 3px 0;
+  padding: 0px 0px;
   margin-bottom: 10px;
   clear: both;
 }
@@ -29,15 +29,26 @@ register_css <<CSS
 #post_2 .topic-meta-data{
   width: 300px;
 }
+#post_2 .topic-body .regular {
+  width: 387px;
+  padding-left: 3px;
+}
+#post_2 .topic-meta-data .post-info {
+  position: relative;
+  right: -390px;
+}
 .google-adsense.adsense-topic-above-posts,
 .google-adsense.adsense-discovery-list-container-top {
   position: absolute;
 }
 .google-adsense.adsense-topic-above-posts {
   left: 760px;
+  padding-left: 3px;
 }
 .google-adsense.adsense-discovery-list-container-top {
   left: 1110px;
+  top: 161px;
+  padding-left: 3px;
 }
 .discovery-list-container-top-outlet.discourse-adplugin {
   position: relative;
@@ -84,6 +95,11 @@ register_css <<CSS
   padding: 20px 0;
   overflow-x: hidden;
   overflow-y: auto;
+
+  display: none;
+}
+.search-page .google-adsense.adsense-above-footer {
+  display: block;
 }
 
 .amazon-product-links {
