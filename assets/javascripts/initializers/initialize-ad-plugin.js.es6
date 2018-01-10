@@ -41,7 +41,8 @@ export default {
     });
 
     withPluginApi('0.1', api => {
-      api.decorateWidget('post-meta-data:after', dec => {
+      api.decorateWidget('post-contents:before', dec => {
+        console.error(dec);
 
         if (dec.canConnectComponent) {
           return dec.connect({ component: 'adplugin-nth-container', context: 'model' });
@@ -53,6 +54,15 @@ export default {
           context: 'model'
         });
       });
+
+      api.decorateCooked($elem => {
+          setTimeout(function(){
+              $elem.prepend( () => {
+                  return $elem.prev('.widget-connector');
+              } );
+          }, 100);
+      }, this);
+
       api.decorateWidget('post:after', dec => {
 
         if (dec.canConnectComponent) {

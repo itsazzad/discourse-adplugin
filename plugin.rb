@@ -18,24 +18,8 @@ register_css <<CSS
 
 .google-adsense {
   padding: 0px 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   clear: both;
-}
-
-#post_2 .topic-meta-data,
-#post_2 .topic-body .regular{
-  float: left;
-}
-#post_2 .topic-meta-data{
-  width: 300px;
-}
-#post_2 .topic-body .regular {
-  width: 385px;
-  padding-left: 5px;
-}
-#post_2 .topic-meta-data .post-info {
-  position: relative;
-  right: -390px;
 }
 .google-adsense.adsense-topic-above-posts,
 .google-adsense.adsense-discovery-list-container-top {
@@ -49,6 +33,10 @@ register_css <<CSS
   left: 1110px;
   top: 142px;
   padding-left: 3px;
+}
+.google-adsense.adsense-post-before {
+  float: left;
+  padding: 0 5px 5px 0;
 }
 .search-page .google-adsense.adsense-discovery-list-container-top {
   left: 780px;
