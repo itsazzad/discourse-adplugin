@@ -6,6 +6,10 @@
 
 register_css <<CSS
 
+.cooked ins {
+  background-color: transparent;
+}
+
 .google-dfp-ad {
   padding: 3px 0;
   margin-bottom: 10px;
