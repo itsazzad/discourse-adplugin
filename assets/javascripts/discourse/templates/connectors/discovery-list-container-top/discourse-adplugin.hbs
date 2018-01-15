@@ -2,14 +2,20 @@
   {{#if siteSettings.adsense_mobile_discovery_list_container_top_code}}
     {{google-adsense placement="discovery-list-container-top" listLoading=listLoading}}
   {{/if}}
-  {{#if siteSettings.adsense_mobile_discovery_list_container_top_code}}
+  {{#if siteSettings.adsense_mobile_discovery_list_container_left_code}}
+    {{google-adsense placement="discovery-list-container-left" listLoading=listLoading}}
+  {{/if}}
+  {{#if siteSettings.adsense_mobile_topic_above_post_stream_code}}
       {{google-adsense placement="discovery-list-container-top" listLoading=listLoading code_from="topic-above-post-stream"}}
   {{/if}}
 {{else}}
   {{#if siteSettings.adsense_discovery_list_container_top_code}}
     {{google-adsense placement="discovery-list-container-top" listLoading=listLoading}}
   {{/if}}
-  {{#if siteSettings.adsense_discovery_list_container_top_code}}
+  {{#if siteSettings.adsense_discovery_list_container_left_code}}
+    {{google-adsense placement="discovery-list-container-left" listLoading=listLoading}}
+  {{/if}}
+  {{#if siteSettings.adsense_topic_above_post_stream_code}}
       {{google-adsense placement="discovery-list-container-top" listLoading=listLoading code_from="topic-above-post-stream"}}
   {{/if}}
 {{/if}}

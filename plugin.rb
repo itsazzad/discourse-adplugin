@@ -26,6 +26,7 @@ register_css <<CSS
   clear: both;
 }
 .google-adsense.adsense-topic-above-posts,
+.google-adsense.adsense-discovery-list-container-left,
 .google-adsense.adsense-discovery-list-container-top {
   position: absolute;
 }
@@ -33,9 +34,15 @@ register_css <<CSS
   left: 760px;
   padding-left: 3px;
 }
+.google-adsense.adsense-discovery-list-container-left,
+.google-adsense.adsense-discovery-list-container-top {
+  top: 142px;
+}
+.google-adsense.adsense-discovery-list-container-left {
+  left: -160px;
+}
 .google-adsense.adsense-discovery-list-container-top {
   left: 1110px;
-  top: 142px;
   padding-left: 3px;
 }
 .google-adsense.adsense-post-before {
