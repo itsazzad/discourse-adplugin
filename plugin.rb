@@ -40,7 +40,10 @@ register_css <<CSS
 }
 .google-adsense.adsense-post-before {
   float: left;
-  padding: 0 5px 5px 0;
+  padding: 0 25px 10px 0;
+}
+.topic-body .contents .cooked {
+  overflow: visible;
 }
 .search-page .google-adsense.adsense-discovery-list-container-top {
   left: 780px;
@@ -48,7 +51,6 @@ register_css <<CSS
 .discovery-list-container-top-outlet.discourse-adplugin {
   position: relative;
 }
-
 
 .google-adsense.adsense-responsive {
   width: 100%;
