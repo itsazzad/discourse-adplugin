@@ -32,18 +32,16 @@ register_css <<CSS
 }
 .google-adsense.adsense-topic-above-posts {
   left: 760px;
-  padding-left: 3px;
 }
 .google-adsense.adsense-discovery-list-container-left,
 .google-adsense.adsense-discovery-list-container-top {
-  top: 142px;
+  top: 132px;
 }
 .google-adsense.adsense-discovery-list-container-left {
   left: -160px;
 }
 .google-adsense.adsense-discovery-list-container-top {
   left: 1110px;
-  padding-left: 3px;
 }
 .google-adsense.adsense-post-before {
   float: left;
