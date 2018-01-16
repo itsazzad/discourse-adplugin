@@ -38,10 +38,13 @@ register_css <<CSS
   top: 132px;
 }
 .google-adsense.adsense-discovery-list-container-left {
-  left: -160px;
+  left: -165px;
 }
 .google-adsense.adsense-discovery-list-container-top {
-  left: 1110px;
+  left: 1115px;
+}
+body.search-page .google-adsense.adsense-discovery-list-container-left {
+  display: none;
 }
 .google-adsense.adsense-post-before {
   float: left;
