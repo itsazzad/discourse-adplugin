@@ -23,8 +23,8 @@ register_css <<CSS
 }
 
 .google-adsense {
-  padding: 0px 0px;
-  margin-bottom: 0px;
+  padding: 0 0;
+  margin-bottom: 0;
   clear: both;
 }
 .google-adsense.adsense-topic-above-posts,
