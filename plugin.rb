@@ -3,6 +3,8 @@
 # version: 1.0.2
 # authors: Vi and Sarah (@ladydanger and @cyberkoi)
 # developer: Sazzad Tushar Khan (itsazzad@gmail.com)
+# url: https://github.com/itsazzad/discourse-adplugin
+# forked from: https://github.com/discourse/discourse-adplugin
 
 register_css <<CSS
 
@@ -31,11 +33,14 @@ register_css <<CSS
   position: absolute;
 }
 .google-adsense.adsense-topic-above-posts {
-  left: 760px;
+  left: 765px;
 }
 .google-adsense.adsense-discovery-list-container-left,
 .google-adsense.adsense-discovery-list-container-top {
   top: 132px;
+}
+body.search-page .google-adsense.adsense-discovery-list-container-top {
+  top: 134px;
 }
 .google-adsense.adsense-discovery-list-container-left {
   left: -165px;
@@ -54,7 +59,7 @@ body.search-page .google-adsense.adsense-discovery-list-container-left {
   overflow: visible;
 }
 .search-page .google-adsense.adsense-discovery-list-container-top {
-  left: 780px;
+  left: 785px;
 }
 .discovery-list-container-top-outlet.discourse-adplugin {
   position: relative;
