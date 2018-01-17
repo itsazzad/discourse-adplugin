@@ -55,9 +55,6 @@ body.search-page .google-adsense.adsense-discovery-list-container-left {
   float: left;
   padding: 0 25px 10px 0;
 }
-.topic-body .contents .cooked {
-  overflow: visible;
-}
 .search-page .google-adsense.adsense-discovery-list-container-top {
   left: 785px;
 }
@@ -111,6 +108,12 @@ body.search-page .google-adsense.adsense-discovery-list-container-left {
 }
 .search-page .google-adsense.adsense-above-footer {
   display: block;
+}
+.topic-body .contents .cooked {
+  overflow: visible;
+}
+.cooked ul, .cooked ol, .cooked dd {
+    clear: none;
 }
 
 .amazon-product-links {
