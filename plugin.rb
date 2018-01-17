@@ -72,6 +72,7 @@ body.search-page .google-adsense.adsense-discovery-list-container-left {
 .google-adsense .google-adsense-label {
   width: auto;
   margin: 0 auto;
+  display: none;
 }
 
 .google-adsense.adsense-responsive .google-adsense-label {
