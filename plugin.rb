@@ -26,6 +26,7 @@ register_css <<CSS
   padding: 0 0;
   margin-bottom: 0;
   clear: both;
+  z-index: 9;
 }
 .google-adsense.adsense-topic-above-posts,
 .google-adsense.adsense-discovery-list-container-left,
@@ -54,6 +55,7 @@ body.search-page .google-adsense.adsense-discovery-list-container-left {
 .google-adsense.adsense-post-before {
   float: left;
   padding: 0 25px 10px 0;
+  height: 250px;
 }
 .search-page .google-adsense.adsense-discovery-list-container-top {
   left: 785px;
