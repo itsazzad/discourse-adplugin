@@ -70,26 +70,30 @@ export default {
 
     $(document).ready(function(){
       var ads = {
-          // 'body.search-page .google-adsense.adsense-discovery-list-container-top': {
-          //     base: '.search-title',
-          //     defaultPositionTop: 134,
-          //     defaultOffsetTop: undefined,
-          //     havingClosest: undefined,
-          // },
+          'body.search-page .google-adsense.adsense-discovery-list-container-top': {
+            base: '.search-container',
+            calculateBaseMargin: true,
+            defaultPositionTop: 134,
+            defaultOffsetTop: undefined,
+            havingClosest: undefined,
+          },
           '.google-adsense.adsense-discovery-list-container-top': {
             base: '.topic-list tbody',
+            calculateBaseMargin: false,
             defaultPositionTop: 132,
             defaultOffsetTop: 250,
             havingClosest: 'body.search-page',
           },
           '.google-adsense.adsense-discovery-list-container-left': {
             base: '.topic-list tbody',
+            calculateBaseMargin: false,
             defaultPositionTop: 132,
             defaultOffsetTop: 250,
             havingClosest: undefined,
           },
           '.google-adsense.adsense-topic-above-posts': {
             base: '.post-stream',
+            calculateBaseMargin: false,
             defaultPositionTop: 0,
             defaultOffsetTop: 240,
             havingClosest: undefined,
@@ -99,17 +103,21 @@ export default {
           $( window ).scroll(function() {
               var ad$ = $(adKey);
               if(ad$.length){
-                  // if(!adValue.havingClosest || !$(adKey).closest(adValue.havingClosest).length){
                   if(!adValue.havingClosest || !$(adKey).closest(adValue.havingClosest).length){
                       var windowScrollTop = $(window).scrollTop();
                       var defaultOffsetTop = adValue.defaultOffsetTop;
-                      if(!defaultOffsetTop) defaultOffsetTop = ad$.offset().top;
-                      console.error(adKey, defaultOffsetTop);
+                      if(!defaultOffsetTop){
+                          defaultOffsetTop = ad$.parent().offset().top + adValue.defaultPositionTop - $('.d-header').outerHeight();
+                      }
                       if(windowScrollTop >= defaultOffsetTop){
-                          var top = windowScrollTop - defaultOffsetTop + adValue.defaultPositionTop;
-                          var adHeight = ad$.outerHeight();
                           var baseWrapperHeight = $(adValue.base).outerHeight();
-                          var maxTop = ((baseWrapperHeight + adValue.defaultPositionTop) - adHeight);
+                          var baseMargin = 0;
+                          if(adValue.calculateBaseMargin){
+                              baseMargin = ad$.parent().offset().top - $(adValue.base).offset().top;
+                          }
+                          var top = windowScrollTop - defaultOffsetTop + adValue.defaultPositionTop;
+                          var adHeight = 600;
+                          var maxTop = ((baseWrapperHeight - baseMargin + adValue.defaultPositionTop) - adHeight);
                           if(top <= maxTop){
                               ad$.css({ top });
                           }else{
@@ -122,8 +130,6 @@ export default {
               }
           });
       });
-
     });
-
   }
 };
