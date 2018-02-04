@@ -53,26 +53,16 @@ body.search-page .google-adsense.adsense-discovery-list-container-left {
   display: none;
 }
 .google-adsense.adsense-post-contents-before,
-.google-adsense.adsense-post-contents-before-2 {
+.google-adsense.adsense-post-contents-before-2{
   float: left;
   padding: 0 25px 10px 0;
   height: 250px;
 }
 html.mobile-view .google-adsense.adsense-post-contents-before,
-html.mobile-view .google-adsense.adsense-post-contents-before-2 {
+html.mobile-view .google-adsense.adsense-post-contents-before-2{
   float: none;
   padding: 0;
-  height: 100px;
-}
-.google-adsense.adsense-post-before {
-  float: left;
-  padding: 0 25px 10px 0;
-  height: 250px;
-}
-html.mobile-view .google-adsense.adsense-post-before {
-  float: none;
-  padding: 0;
-  height: 100px;
+  height: auto;
 }
 .search-page .google-adsense.adsense-discovery-list-container-top {
   left: 785px;
