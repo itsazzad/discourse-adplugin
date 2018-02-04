@@ -28,16 +28,16 @@ register_css <<CSS
   clear: both;
   z-index: 9;
 }
-.google-adsense.adsense-topic-above-posts,
-.google-adsense.adsense-discovery-list-container-left,
-.google-adsense.adsense-discovery-list-container-top {
-  position: absolute;
-}
 .google-adsense.adsense-topic-above-posts {
   left: 765px;
 }
-.google-adsense.adsense-discovery-list-container-left,
-.google-adsense.adsense-discovery-list-container-top {
+.google-adsense.adsense-topic-above-posts,
+.google-adsense.adsense-discovery-list-container-right,
+.google-adsense.adsense-discovery-list-container-left {
+  position: absolute;
+}
+.google-adsense.adsense-discovery-list-container-right,
+.google-adsense.adsense-discovery-list-container-left {
   top: 132px;
 }
 body.search-page .google-adsense.adsense-discovery-list-container-top {
@@ -46,22 +46,45 @@ body.search-page .google-adsense.adsense-discovery-list-container-top {
 .google-adsense.adsense-discovery-list-container-left {
   left: -165px;
 }
-.google-adsense.adsense-discovery-list-container-top {
+.google-adsense.adsense-discovery-list-container-right {
   left: 1115px;
 }
 body.search-page .google-adsense.adsense-discovery-list-container-left {
   display: none;
+}
+.google-adsense.adsense-post-contents-before,
+.google-adsense.adsense-post-contents-before-2 {
+  float: left;
+  padding: 0 25px 10px 0;
+  height: 250px;
+}
+html.mobile-view .google-adsense.adsense-post-contents-before,
+html.mobile-view .google-adsense.adsense-post-contents-before-2 {
+  float: none;
+  padding: 0;
+  height: 100px;
 }
 .google-adsense.adsense-post-before {
   float: left;
   padding: 0 25px 10px 0;
   height: 250px;
 }
+html.mobile-view .google-adsense.adsense-post-before {
+  float: none;
+  padding: 0;
+  height: 100px;
+}
 .search-page .google-adsense.adsense-discovery-list-container-top {
   left: 785px;
 }
 .discovery-list-container-top-outlet.discourse-adplugin {
   position: relative;
+}
+html.mobile-view .discovery-list-container-top-outlet.discourse-adplugin {
+  display: none;
+}
+html.mobile-view .navigation-topics .discovery-list-container-top-outlet.discourse-adplugin {
+  display: block;
 }
 
 .google-adsense.adsense-responsive {
@@ -156,7 +179,7 @@ body.search-page .google-adsense.adsense-discovery-list-container-left {
   font-weight: normal;
 }
 
-.google-dfp-ad.dfp-ad-post-bottom {
+.google-dfp-ad.dfp-ad-post-after {
   .google-dfp-ad-label, .dfp-ad-unit {
     margin: 0 0 0 52px;
   }

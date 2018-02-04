@@ -7,8 +7,16 @@ export default {
     const siteSettings = container.lookup('site-settings:main');
 
     PostModel.reopen({
-      postFixedCountAdsense: function() {
-        return this.isOnlyNthPost(parseInt(siteSettings.adsense_only_nth_reply_code));
+      postBeforeFixedCountAdsense: function() {
+        return this.isOnlyNthPost(parseInt(siteSettings.adsense_only_nth_post_contents_before_code));
+      }.property('post_number'),
+
+      postBefore2FixedCountAdsense: function() {
+        return this.isOnlyNthPost(parseInt(siteSettings.adsense_only_nth_post_contents_before_2_code));
+      }.property('post_number'),
+
+      postAfterFixedCountAdsense: function() {
+        return this.isOnlyNthPost(parseInt(siteSettings.adsense_only_nth_post_menu_before_code));
       }.property('post_number'),
 
       postSpecificCountDFP: function() {
@@ -41,19 +49,6 @@ export default {
     });
 
     withPluginApi('0.1', api => {
-      api.decorateWidget('post-contents:before', dec => {
-
-        if (dec.canConnectComponent) {
-          return dec.connect({ component: 'adplugin-nth-container', context: 'model' });
-        }
-
-        // Old way for backwards compatibility
-        return dec.connect({
-          templateName: 'connectors/post-before/discourse-adplugin',
-          context: 'model'
-        });
-      });
-
       api.decorateWidget('post:after', dec => {
 
         if (dec.canConnectComponent) {
@@ -63,6 +58,32 @@ export default {
         // Old way for backwards compatibility
         return dec.connect({
           templateName: 'connectors/post-bottom/discourse-adplugin',
+          context: 'model'
+        });
+      });
+
+      api.decorateWidget('post-contents:before', dec => {
+
+        if (dec.canConnectComponent) {
+          return dec.connect({ component: 'post-contents-before', context: 'model' });
+        }
+
+        // Old way for backwards compatibility
+        return dec.connect({
+          templateName: 'connectors/post-contents-before/discourse-adplugin',
+          context: 'model'
+        });
+      });
+
+      api.decorateWidget('post-menu:before', dec => {
+
+        if (dec.canConnectComponent) {
+          return dec.connect({ component: 'post-menu-before', context: 'model' });
+        }
+
+        // Old way for backwards compatibility
+        return dec.connect({
+          templateName: 'connectors/post-menu-before/discourse-adplugin',
           context: 'model'
         });
       });
@@ -77,7 +98,7 @@ export default {
             defaultOffsetTop: undefined,
             havingClosest: undefined,
           },
-          '.google-adsense.adsense-discovery-list-container-top': {
+          '.google-adsense.adsense-discovery-list-container-right': {
             base: '.topic-list tbody',
             calculateBaseMargin: false,
             defaultPositionTop: 132,

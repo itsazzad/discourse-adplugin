@@ -103,17 +103,17 @@ function defineSlot(divId, placement, settings, isMobile) {
       ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_above_suggested_code, [width, height], divId).addService(window.googletag.pubads());
       custom_targeting((keyParse(settings.dfp_target_topic_above_suggested_key_code)), (keyParse(settings.dfp_target_topic_above_suggested_value_code)), ad);
     }
-  } else if (placement === "post-bottom" && settings.dfp_post_bottom_code && settings.dfp_post_bottom_ad_sizes) {
+  } else if (placement === "post-after" && settings.dfp_post_after_code && settings.dfp_post_after_ad_sizes) {
     if (isMobile) {
-      width = parseInt(splitWidthInt(settings.dfp_mobile_post_bottom_ad_sizes));
-      height = parseInt(splitHeightInt(settings.dfp_mobile_post_bottom_ad_sizes));
-      ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_post_bottom_code, [width,height], divId).addService(window.googletag.pubads());
-      custom_targeting((keyParse(settings.dfp_target_post_bottom_key_code)), (keyParse(settings.dfp_target_post_bottom_value_code)), ad);
+      width = parseInt(splitWidthInt(settings.dfp_mobile_post_after_ad_sizes));
+      height = parseInt(splitHeightInt(settings.dfp_mobile_post_after_ad_sizes));
+      ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_post_after_code, [width,height], divId).addService(window.googletag.pubads());
+      custom_targeting((keyParse(settings.dfp_target_post_after_key_code)), (keyParse(settings.dfp_target_post_after_value_code)), ad);
     } else {
-      width = parseInt(splitWidthInt(settings.dfp_post_bottom_ad_sizes));
-      height = parseInt(splitHeightInt(settings.dfp_post_bottom_ad_sizes));
-      ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_post_bottom_code, [width, height], divId).addService(window.googletag.pubads());
-      custom_targeting((keyParse(settings.dfp_target_post_bottom_key_code)), (keyParse(settings.dfp_target_post_bottom_value_code)), ad);
+      width = parseInt(splitWidthInt(settings.dfp_post_after_ad_sizes));
+      height = parseInt(splitHeightInt(settings.dfp_post_after_ad_sizes));
+      ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_post_after_code, [width, height], divId).addService(window.googletag.pubads());
+      custom_targeting((keyParse(settings.dfp_target_post_after_key_code)), (keyParse(settings.dfp_target_post_after_value_code)), ad);
     }
   }
 

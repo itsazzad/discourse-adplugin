@@ -10,7 +10,7 @@ var data = {
   "topic-list-top" : {},
   "topic-above-post-stream" : {},
   "topic-above-suggested" : {},
-  "post-bottom" : {}
+  "post-after" : {}
 };
 
 
@@ -50,16 +50,16 @@ if (Discourse.Mobile.mobileView && Discourse.SiteSettings.amazon_mobile_topic_ab
   data["topic-above-suggested"]["mobile_amazon_height"] = parseInt(Discourse.SiteSettings.amazon_mobile_topic_above_suggested_ad_height_code);
 }
 
-if (!Discourse.Mobile.mobileView && Discourse.SiteSettings.amazon_post_bottom_src_code) {
-  data["post-bottom"]["user_input"] = Discourse.SiteSettings.amazon_post_bottom_src_code;
-  data["post-bottom"]["amazon_width"] = parseInt(Discourse.SiteSettings.amazon_post_bottom_ad_width_code);
-  data["post-bottom"]["amazon_height"] = parseInt(Discourse.SiteSettings.amazon_post_bottom_ad_height_code);
+if (!Discourse.Mobile.mobileView && Discourse.SiteSettings.amazon_post_after_src_code) {
+  data["post-after"]["user_input"] = Discourse.SiteSettings.amazon_post_after_src_code;
+  data["post-after"]["amazon_width"] = parseInt(Discourse.SiteSettings.amazon_post_after_ad_width_code);
+  data["post-after"]["amazon_height"] = parseInt(Discourse.SiteSettings.amazon_post_after_ad_height_code);
 }
 
-if (Discourse.Mobile.mobileView && Discourse.SiteSettings.amazon_mobile_post_bottom_src_code) {
-  data["post-bottom"]["user_input_mobile"] = Discourse.SiteSettings.amazon_mobile_post_bottom_src_code;
-  data["post-bottom"]["mobile_amazon_width"] = parseInt(Discourse.SiteSettings.amazon_mobile_post_bottom_ad_width_code);
-  data["post-bottom"]["mobile_amazon_height"] = parseInt(Discourse.SiteSettings.amazon_mobile_post_bottom_ad_height_code);
+if (Discourse.Mobile.mobileView && Discourse.SiteSettings.amazon_mobile_post_after_src_code) {
+  data["post-after"]["user_input_mobile"] = Discourse.SiteSettings.amazon_mobile_post_after_src_code;
+  data["post-after"]["mobile_amazon_width"] = parseInt(Discourse.SiteSettings.amazon_mobile_post_after_ad_width_code);
+  data["post-after"]["mobile_amazon_height"] = parseInt(Discourse.SiteSettings.amazon_mobile_post_after_ad_height_code);
 }
 
 

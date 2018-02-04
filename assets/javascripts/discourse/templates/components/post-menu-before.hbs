@@ -1,0 +1,13 @@
+{{#if site.mobileView}}
+  {{#if model.postAfterFixedCountAdsense}}
+    {{#if siteSettings.adsense_mobile_post_menu_before_code}}
+      {{google-adsense placement="post-menu-before" postNumber=model.post_number}}
+    {{/if}}
+  {{/if}}
+{{else}}
+  {{#if model.postAfterFixedCountAdsense}}
+    {{#if siteSettings.adsense_post_menu_before_code}}
+      {{google-adsense placement="post-menu-before" postNumber=model.post_number}}
+    {{/if}}
+  {{/if}}
+{{/if}}

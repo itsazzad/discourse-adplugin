@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+  {{#if siteSettings.adsense_mobile_full_page_search_result_code}}
+    {{google-adsense placement="full-page-search-result"}}
+  {{/if}}
+{{else}}
+  {{#if siteSettings.adsense_full_page_search_result_code}}
+    {{google-adsense placement="full-page-search-result"}}
+  {{/if}}
+{{/if}}
