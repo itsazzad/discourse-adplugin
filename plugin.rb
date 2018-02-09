@@ -70,7 +70,7 @@ html.mobile-view .google-adsense.adsense-post-contents-before-2{
 .discovery-list-container-top-outlet.discourse-adplugin {
   position: relative;
 }
-html.mobile-view .discovery-list-container-top-outlet.discourse-adplugin {
+html.mobile-view .search-page .discovery-list-container-top-outlet.discourse-adplugin {
   display: none;
 }
 html.mobile-view .navigation-topics .discovery-list-container-top-outlet.discourse-adplugin {
@@ -107,6 +107,10 @@ html.mobile-view .navigation-topics .discovery-list-container-top-outlet.discour
 
 .google-adsense .google-adsense-content {
   margin: 0 auto;
+}
+.archetype-regular .google-adsense .google-adsense-content,
+.search-page .google-adsense .google-adsense-content {
+  margin: 0;
 }
 
 .google-adsense.adsense-above-footer {
