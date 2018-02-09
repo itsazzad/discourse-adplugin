@@ -115,6 +115,9 @@ html.mobile-view .navigation-topics .discovery-list-container-top-outlet.discour
 .search-page .google-adsense .google-adsense-content {
   margin: 0;
 }
+html.mobile-view .google-adsense .google-adsense-content {
+  margin: 0 auto;
+}
 
 .google-adsense.adsense-above-footer {
   position: fixed;
