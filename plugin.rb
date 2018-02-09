@@ -50,7 +50,7 @@ body.search-page .google-adsense.adsense-discovery-list-container-top {
   left: 1115px;
 }
 body.search-page .google-adsense.adsense-discovery-list-container-right {
-  left: 780px;
+  left: 785px;
 }
 body.search-page .google-adsense.adsense-discovery-list-container-left {
   display: none;
@@ -66,9 +66,6 @@ html.mobile-view .google-adsense.adsense-post-contents-before-2{
   float: none;
   padding: 0;
   height: auto;
-}
-body.search-page .google-adsense.adsense-discovery-list-container-top {
-  left: 785px;
 }
 .discovery-list-container-top-outlet.discourse-adplugin {
   position: relative;
