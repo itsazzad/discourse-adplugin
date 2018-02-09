@@ -99,17 +99,17 @@ export default {
             havingClosest: undefined,
           },
           '.google-adsense.adsense-discovery-list-container-right': {
-            base: '.topic-list tbody',
+            base: '#list-area .contents',
             calculateBaseMargin: false,
             defaultPositionTop: 132,
-            defaultOffsetTop: 250,
+            defaultOffsetTop: 215,
             havingClosest: 'body.search-page',
           },
           '.google-adsense.adsense-discovery-list-container-left': {
-            base: '.topic-list tbody',
+            base: '#list-area .contents',
             calculateBaseMargin: false,
             defaultPositionTop: 132,
-            defaultOffsetTop: 250,
+            defaultOffsetTop: 215,
             havingClosest: undefined,
           },
           '.google-adsense.adsense-topic-above-posts': {
