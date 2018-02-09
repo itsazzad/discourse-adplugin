@@ -49,6 +49,9 @@ body.search-page .google-adsense.adsense-discovery-list-container-top {
 .google-adsense.adsense-discovery-list-container-right {
   left: 1115px;
 }
+body.search-page .google-adsense.adsense-discovery-list-container-right {
+  left: 780px;
+}
 body.search-page .google-adsense.adsense-discovery-list-container-left {
   display: none;
 }
@@ -64,13 +67,13 @@ html.mobile-view .google-adsense.adsense-post-contents-before-2{
   padding: 0;
   height: auto;
 }
-.search-page .google-adsense.adsense-discovery-list-container-top {
+body.search-page .google-adsense.adsense-discovery-list-container-top {
   left: 785px;
 }
 .discovery-list-container-top-outlet.discourse-adplugin {
   position: relative;
 }
-html.mobile-view .search-page .discovery-list-container-top-outlet.discourse-adplugin {
+html.mobile-view body.search-page .discovery-list-container-top-outlet.discourse-adplugin {
   display: none;
 }
 html.mobile-view .navigation-topics .discovery-list-container-top-outlet.discourse-adplugin {

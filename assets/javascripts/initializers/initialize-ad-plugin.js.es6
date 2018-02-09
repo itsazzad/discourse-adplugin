@@ -91,40 +91,40 @@ export default {
 
     $(document).ready(function(){
       var ads = {
-          'body.search-page .google-adsense.adsense-discovery-list-container-top': {
+          'body.search-page .google-adsense.adsense-discovery-list-container-right': {
             base: '.search-container',
             calculateBaseMargin: true,
             defaultPositionTop: 134,
             defaultOffsetTop: undefined,
-            havingClosest: undefined,
+            notHavingClosest: undefined,
           },
           '.google-adsense.adsense-discovery-list-container-right': {
             base: '#list-area .contents',
             calculateBaseMargin: false,
             defaultPositionTop: 132,
             defaultOffsetTop: 215,
-            havingClosest: 'body.search-page',
+            notHavingClosest: 'body.search-page',
           },
           '.google-adsense.adsense-discovery-list-container-left': {
             base: '#list-area .contents',
             calculateBaseMargin: false,
             defaultPositionTop: 132,
             defaultOffsetTop: 215,
-            havingClosest: undefined,
+            notHavingClosest: 'body.search-page',
           },
           '.google-adsense.adsense-topic-above-posts': {
             base: '.post-stream',
             calculateBaseMargin: false,
             defaultPositionTop: 0,
             defaultOffsetTop: 240,
-            havingClosest: undefined,
+            notHavingClosest: undefined,
           },
       };
       $.each( ads, function( adKey, adValue ) {
           $( window ).scroll(function() {
               var ad$ = $(adKey);
               if(ad$.length){
-                  if(!adValue.havingClosest || !$(adKey).closest(adValue.havingClosest).length){
+                  if(!adValue.notHavingClosest || !$(adKey).closest(adValue.notHavingClosest).length){
                       var windowScrollTop = $(window).scrollTop();
                       var defaultOffsetTop = adValue.defaultOffsetTop;
                       if(!defaultOffsetTop){
