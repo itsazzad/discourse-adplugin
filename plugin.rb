@@ -75,6 +75,14 @@ html.mobile-view body.search-page .discovery-list-container-top-outlet.discourse
 }
 html.mobile-view .navigation-topics .discovery-list-container-top-outlet.discourse-adplugin {
   display: block;
+  border-top: 3px solid #e9e9e9;
+  padding-top: 5px;
+}
+html.mobile-view .full-page-search-result-outlet{
+  padding-bottom: 5px;
+}
+html.mobile-view .topic-list>tbody>tr:first-of-type{
+  border-top: none;
 }
 
 .google-adsense.adsense-responsive {
