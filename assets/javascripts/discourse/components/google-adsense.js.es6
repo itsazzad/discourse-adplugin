@@ -219,7 +219,9 @@ export default Ember.Component.extend({
 
       try {
         adsbygoogle.push({}); // ask AdSense to fill one ad unit
-      } catch (ex) {}
+      } catch (ex) {
+        console.error('!_triggerAds', ex);
+      }
     });
   },
 

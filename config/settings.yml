@@ -7,323 +7,6 @@ adsense_plugin:
     client: true
     default: 2
     enum: 'TrustLevelSetting'
-
-  adsense_post_contents_before_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_post_contents_before_ad_sizes:
-    client: true
-    default: '300*250 - medium rectangle'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_post_contents_before_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_post_contents_before_ad_size:
-    client: true
-    default: '300*250 - medium rectangle'
-    type: enum
-    choices: *adsense_choices
-  adsense_only_nth_post_contents_before_code:
-    client: true
-    default: 1
-    min: 1
-
-  adsense_post_contents_before_2_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_post_contents_before_2_ad_sizes:
-    client: true
-    default: '300*250 - medium rectangle'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_post_contents_before_2_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_post_contents_before_2_ad_size:
-    client: true
-    default: '320*100 - large mobile banner'
-    type: enum
-    choices: *adsense_choices
-  adsense_only_nth_post_contents_before_2_code:
-    client: true
-    default: 2
-    min: 1
-
-  adsense_post_menu_before_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_post_menu_before_ad_sizes:
-    client: true
-    default: '300*250 - medium rectangle'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_post_menu_before_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_post_menu_before_ad_size:
-    client: true
-    default: '320*100 - large mobile banner'
-    type: enum
-    choices: *adsense_choices
-  adsense_only_nth_post_menu_before_code:
-    client: true
-    default: 2
-    min: 1
-
-  adsense_topic_above_posts_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_topic_above_posts_ad_sizes:
-    client: true
-    default: '160*600 - wide skyscraper'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_topic_above_posts_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_topic_above_posts_ad_size:
-    client: true
-    default: '320*100 - large mobile banner'
-    type: enum
-    choices: *adsense_choices
-
-  adsense_above_footer_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_above_footer_ad_sizes:
-    client: true
-    default: '160*600 - wide skyscraper'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_above_footer_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_above_footer_ad_size:
-    client: true
-    default: '320*100 - large mobile banner'
-    type: enum
-    choices: *adsense_choices
-
-  adsense_discovery_list_container_top_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_discovery_list_container_top_ad_sizes:
-    client: true
-    default: '728*90 - leaderboard'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_discovery_list_container_top_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_discovery_list_container_top_ad_size:
-    client: true
-    default: '320*100 - large mobile banner'
-    type: enum
-    choices: *adsense_choices
-
-  adsense_discovery_list_container_right_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_discovery_list_container_right_ad_sizes:
-    client: true
-    default: '160*600 - wide skyscraper'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_discovery_list_container_right_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_discovery_list_container_left_ad_size:
-    client: true
-    default: '320*100 - large mobile banner'
-    type: enum
-    choices: *adsense_choices
-
-  adsense_discovery_list_container_left_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_discovery_list_container_left_ad_sizes:
-    client: true
-    default: '160*600 - wide skyscraper'
-    type: enum
-    choices: &adsense_choices
-      - responsive
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
-  adsense_mobile_discovery_list_container_left_code:
-    client: true
-    default: ''
-    max: 50
-    regex: '^[\d]*$'
-  adsense_mobile_discovery_list_container_left_ad_size:
-    client: true
-    default: '320*100 - large mobile banner'
-    type: enum
-    choices: *adsense_choices
-
   adsense_topic_list_top_code:
     client: true
     default: ''
@@ -336,21 +19,22 @@ adsense_plugin:
     choices: &adsense_choices
       - responsive
       - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
       - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
       - 234*60 - half banner
       - 125*125 - button
+      - 120*600 - skyscraper
+      - 160*600 - wide skyscraper
       - 180*150 - small rectangle
+      - 120*240 - vertical banner
       - 200*200 - small square
       - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
+      - 300*250 - medium rectangle
+      - 336*280 - large rectangle
+      - 300*600 - half page
+      - 300*1050 - portrait
+      - 320*50 - mobile banner
+      - 970*90 - large leaderboard
+      - 970*250 - billboard
   adsense_mobile_topic_list_top_code:
     client: true
     default: ''
@@ -425,6 +109,186 @@ adsense_plugin:
     client: true
     default: ''
     min: 1
+
+  adsense_post_contents_before_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_post_contents_before_ad_sizes:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_post_contents_before_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_post_contents_before_ad_size:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+  adsense_only_nth_post_contents_before_code:
+    client: true
+    default: 1
+    min: 1
+
+  adsense_post_contents_before_2_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_post_contents_before_2_ad_sizes:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_post_contents_before_2_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_post_contents_before_2_ad_size:
+    client: true
+    default: '320*100 - large mobile banner'
+    type: enum
+    choices: *adsense_choices
+  adsense_only_nth_post_contents_before_2_code:
+    client: true
+    default: 2
+    min: 1
+
+  adsense_post_menu_before_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_post_menu_before_ad_sizes:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_post_menu_before_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_post_menu_before_ad_size:
+    client: true
+    default: '320*100 - large mobile banner'
+    type: enum
+    choices: *adsense_choices
+  adsense_only_nth_post_menu_before_code:
+    client: true
+    default: 2
+    min: 1
+
+  adsense_topic_above_posts_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_topic_above_posts_ad_sizes:
+    client: true
+    default: '160*600 - wide skyscraper'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_topic_above_posts_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_topic_above_posts_ad_size:
+    client: true
+    default: '320*100 - large mobile banner'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_above_footer_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_above_footer_ad_sizes:
+    client: true
+    default: '160*600 - wide skyscraper'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_above_footer_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_above_footer_ad_size:
+    client: true
+    default: '320*100 - large mobile banner'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_discovery_list_container_top_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_discovery_list_container_top_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_discovery_list_container_top_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_discovery_list_container_top_ad_size:
+    client: true
+    default: '320*100 - large mobile banner'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_discovery_list_container_right_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_discovery_list_container_right_ad_sizes:
+    client: true
+    default: '160*600 - wide skyscraper'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_discovery_list_container_right_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_discovery_list_container_left_ad_size:
+    client: true
+    default: '320*100 - large mobile banner'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_discovery_list_container_left_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_discovery_list_container_left_ad_sizes:
+    client: true
+    default: '160*600 - wide skyscraper'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_discovery_list_container_left_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_discovery_list_container_left_ad_size:
+    client: true
+    default: '320*100 - large mobile banner'
+    type: enum
+    choices: *adsense_choices
 
   adsense_full_page_search_result_code:
     client: true

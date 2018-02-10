@@ -28,6 +28,11 @@ register_css <<CSS
   clear: both;
   z-index: 9;
 }
+.google-adsense ins {
+    min-width: 120px;
+    min-height: 50px;
+}
+
 .google-adsense.adsense-topic-above-posts {
   left: 765px;
 }
