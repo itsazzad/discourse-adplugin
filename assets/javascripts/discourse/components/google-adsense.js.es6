@@ -35,6 +35,9 @@ function loadAdsense() {
 }
 
 var data = {
+  "topic-list-top": {},
+  "topic-above-post-stream": {},
+  "topic-above-suggested": {},
   "post-bottom": {},
   "post-contents-before": {},
   "post-contents-before-2": {},
@@ -44,9 +47,6 @@ var data = {
   "discovery-list-container-top": {},
   "discovery-list-container-right": {},
   "discovery-list-container-left": {},
-  "topic-list-top": {},
-  "topic-above-post-stream": {},
-  "topic-above-suggested": {},
   "full-page-search-result": {},
 };
 

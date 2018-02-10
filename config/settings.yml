@@ -32,9 +32,10 @@ adsense_plugin:
       - 336*280 - large rectangle
       - 300*600 - half page
       - 300*1050 - portrait
-      - 320*50 - mobile banner
+      - 320*50 - mobile banner/leaderboard
       - 970*90 - large leaderboard
       - 970*250 - billboard
+      - 320*100 - large mobile banner
   adsense_mobile_topic_list_top_code:
     client: true
     default: ''
