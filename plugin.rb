@@ -151,6 +151,19 @@ html.mobile-view .google-adsense .google-adsense-content {
     clear: none;
 }
 
+.google-adsense.adsense-post-bottom {
+  max-width: 735px;
+  padding: 0 11px;
+}
+
+@media all
+and (max-width : 775px) {
+  .google-adsense.adsense-post-bottom {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
 .amazon-product-links {
   padding: 3px;
   margin-bottom: 10px;
