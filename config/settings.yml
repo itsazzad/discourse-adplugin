@@ -1,15 +1,15 @@
 adsense_plugin:
   adsense_publisher_code:
     client: true
-    default: ''
+    default: '5615111067852633'
     regex: '^[\d]*$'
   adsense_through_trust_level:
     client: true
-    default: 2
+    default: 4
     enum: 'TrustLevelSetting'
   adsense_topic_list_top_code:
     client: true
-    default: ''
+    default: '4693285302'
     max: 50
     regex: '^[\d]*$'
   adsense_topic_list_top_ad_sizes:
@@ -38,7 +38,7 @@ adsense_plugin:
       - 320*100 - large mobile banner
   adsense_mobile_topic_list_top_code:
     client: true
-    default: ''
+    default: '3563510184'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_topic_list_top_ad_size:
@@ -48,7 +48,7 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_topic_above_post_stream_code:
     client: true
-    default: ''
+    default: '4693285302'
     max: 50
     regex: '^[\d]*$'
   adsense_topic_above_post_stream_ad_sizes:
@@ -58,12 +58,12 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_mobile_topic_above_post_stream_code:
     client: true
-    default: ''
+    default: '3563510184'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_topic_above_post_stream_ad_size:
     client: true
-    default: '320*100 - large mobile banner'
+    default: 'responsive'
     type: enum
     choices: *adsense_choices
   adsense_topic_above_suggested_code:
@@ -78,7 +78,7 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_mobile_topic_above_suggested_code:
     client: true
-    default: ''
+    default: '4236753012'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_topic_above_suggested_ad_size:
@@ -98,7 +98,7 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_mobile_post_bottom_code:
     client: true
-    default: ''
+    default: '3563510184'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_post_bottom_ad_size:
@@ -123,12 +123,12 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_mobile_post_contents_before_code:
     client: true
-    default: ''
+    default: '3563510184'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_post_contents_before_ad_size:
     client: true
-    default: '300*250 - medium rectangle'
+    default: '320*100 - large mobile banner'
     type: enum
     choices: *adsense_choices
   adsense_only_nth_post_contents_before_code:
@@ -138,7 +138,7 @@ adsense_plugin:
 
   adsense_post_contents_before_2_code:
     client: true
-    default: ''
+    default: '3216552105'
     max: 50
     regex: '^[\d]*$'
   adsense_post_contents_before_2_ad_sizes:
@@ -148,7 +148,7 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_mobile_post_contents_before_2_code:
     client: true
-    default: ''
+    default: '3563510184'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_post_contents_before_2_ad_size:
@@ -173,7 +173,7 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_mobile_post_menu_before_code:
     client: true
-    default: ''
+    default: '3563510184'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_post_menu_before_ad_size:
@@ -188,7 +188,7 @@ adsense_plugin:
 
   adsense_topic_above_posts_code:
     client: true
-    default: ''
+    default: '1739818904'
     max: 50
     regex: '^[\d]*$'
   adsense_topic_above_posts_ad_sizes:
@@ -230,7 +230,7 @@ adsense_plugin:
 
   adsense_discovery_list_container_top_code:
     client: true
-    default: ''
+    default: '4693285302'
     max: 50
     regex: '^[\d]*$'
   adsense_discovery_list_container_top_ad_sizes:
@@ -240,7 +240,7 @@ adsense_plugin:
     choices: *adsense_choices
   adsense_mobile_discovery_list_container_top_code:
     client: true
-    default: ''
+    default: '3563510184'
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_discovery_list_container_top_ad_size:
@@ -251,7 +251,7 @@ adsense_plugin:
 
   adsense_discovery_list_container_right_code:
     client: true
-    default: ''
+    default: '1739818904'
     max: 50
     regex: '^[\d]*$'
   adsense_discovery_list_container_right_ad_sizes:
@@ -272,7 +272,7 @@ adsense_plugin:
 
   adsense_discovery_list_container_left_code:
     client: true
-    default: ''
+    default: '1739818904'
     max: 50
     regex: '^[\d]*$'
   adsense_discovery_list_container_left_ad_sizes:
@@ -293,12 +293,12 @@ adsense_plugin:
 
   adsense_full_page_search_result_code:
     client: true
-    default: ''
+    default: '1739818904'
     max: 50
     regex: '^[\d]*$'
   adsense_full_page_search_result_ad_sizes:
     client: true
-    default: '728*90 - leaderboard'
+    default: 'responsive'
     type: enum
     choices: *adsense_choices
   adsense_mobile_full_page_search_result_code:
@@ -307,6 +307,27 @@ adsense_plugin:
     max: 50
     regex: '^[\d]*$'
   adsense_mobile_full_page_search_result_ad_size:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_search_advanced_sidebar_after_code:
+    client: true
+    default: '1739818904'
+    max: 50
+    regex: '^[\d]*$'
+  adsense_search_advanced_sidebar_after_ad_sizes:
+    client: true
+    default: 'responsive'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_search_advanced_sidebar_after_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_search_advanced_sidebar_after_ad_size:
     client: true
     default: '300*250 - medium rectangle'
     type: enum

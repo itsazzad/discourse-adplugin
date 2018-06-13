@@ -141,9 +141,6 @@ html.mobile-view .google-adsense .google-adsense-content {
 
   display: none;
 }
-.search-page .google-adsense.adsense-above-footer {
-  display: block;
-}
 .topic-body .contents .cooked {
   overflow: visible;
 }
@@ -162,6 +159,14 @@ and (max-width : 775px) {
     box-sizing: border-box;
     width: 100%;
   }
+}
+
+#list-area google-adsense-label{
+  display: none;
+}
+.discourse-adplugin.search-advanced-sidebar-after-outlet{
+  background: #f8f8f8;
+  padding: 1em;
 }
 
 .amazon-product-links {
@@ -207,5 +212,4 @@ and (max-width : 775px) {
     margin: 0 0 0 52px;
   }
 }
-
 CSS
