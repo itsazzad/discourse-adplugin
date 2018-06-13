@@ -1,6 +1,6 @@
 # name: discourse-adplugin
 # about: Ad Plugin for Discourse
-# version: 1.0.2
+# version: 2.0.1
 # authors: Vi and Sarah (@ladydanger and @cyberkoi)
 # developer: Sazzad Tushar Khan (itsazzad@gmail.com)
 # url: https://github.com/itsazzad/discourse-adplugin
