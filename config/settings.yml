@@ -312,22 +312,85 @@ adsense_plugin:
     type: enum
     choices: *adsense_choices
 
-  adsense_search_advanced_sidebar_after_code:
+  adsense_search_advanced_start_code:
     client: true
-    default: '1739818904'
+    default: '4693285302'
     max: 50
     regex: '^[\d]*$'
-  adsense_search_advanced_sidebar_after_ad_sizes:
+  adsense_search_advanced_start_ad_sizes:
     client: true
-    default: 'responsive'
+    default: '728*90 - leaderboard'
     type: enum
     choices: *adsense_choices
-  adsense_mobile_search_advanced_sidebar_after_code:
+  adsense_mobile_search_advanced_start_code:
     client: true
     default: ''
     max: 50
     regex: '^[\d]*$'
-  adsense_mobile_search_advanced_sidebar_after_ad_size:
+  adsense_mobile_search_advanced_start_ad_size:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_search_advanced_end_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_search_advanced_end_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_search_advanced_end_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_search_advanced_end_ad_size:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_search_advanced_sidebar_start_code:
+    client: true
+    default: '3216552105'
+    max: 50
+    regex: '^[\d]*$'
+  adsense_search_advanced_sidebar_start_ad_sizes:
+    client: true
+    default: '300*600 - half page'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_search_advanced_sidebar_start_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_search_advanced_sidebar_start_ad_size:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+
+  adsense_search_advanced_sidebar_end_code:
+    client: true
+    default: '1739818904'
+    max: 50
+    regex: '^[\d]*$'
+  adsense_search_advanced_sidebar_end_ad_sizes:
+    client: true
+    default: '300*250 - medium rectangle'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_search_advanced_sidebar_end_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_search_advanced_sidebar_end_ad_size:
     client: true
     default: '300*250 - medium rectangle'
     type: enum
