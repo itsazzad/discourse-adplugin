@@ -164,7 +164,7 @@ and (max-width : 775px) {
 #list-area google-adsense-label{
   display: none;
 }
-.discourse-adplugin.search-advanced-sidebar-after-outlet{
+.discourse-adplugin.search-advanced-sidebar-end-outlet{
   background: #f8f8f8;
   padding: 1em;
 }

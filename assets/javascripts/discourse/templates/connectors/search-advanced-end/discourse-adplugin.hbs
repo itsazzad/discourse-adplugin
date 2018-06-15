@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+  {{#if siteSettings.adsense_mobile_search_advanced_end_code}}
+    {{google-adsense placement="search-advanced-end"}}
+  {{/if}}
+{{else}}
+  {{#if siteSettings.adsense_search_advanced_end_code}}
+    {{google-adsense placement="search-advanced-end"}}
+  {{/if}}
+{{/if}}

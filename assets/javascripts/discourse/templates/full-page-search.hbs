@@ -1,8 +1,10 @@
 {{#d-section pageClass="search" class="search-container"}}
   {{scroll-tracker name="full-page-search" tag=searchTerm class="hidden"}}
-
   <div class="search-advanced">
-    {{#unless site.mobileView}}
+
+      {{plugin-outlet name="search-advanced-start"}}
+
+      {{#unless site.mobileView}}
       <div class="search-bar">
         {{search-text-field value=searchTerm class="full-page-search search no-blur search-query" action="search" hasAutofocus=hasAutofocus}}
         {{d-button action="search" icon="search" class="btn-primary search-cta" disabled=searching}}
@@ -156,9 +158,15 @@
         {{/conditional-loading-spinner}}
       {{/load-more}}
     </div>
+
+      {{plugin-outlet name="search-advanced-end"}}
+
   </div>
 
   <div class="search-advanced-sidebar">
+
+      {{plugin-outlet name="search-advanced-sidebar-start"}}
+
     {{#if site.mobileView}}
       <div class="search-bar">
         {{search-text-field value=searchTerm class="full-page-search search no-blur search-query" action="search" hasAutofocus=hasAutofocus}}
@@ -194,6 +202,8 @@
           disabled=searching}}
       </div>
     {{/if}}
-      {{plugin-outlet name="search-advanced-sidebar-after"}}
+
+      {{plugin-outlet name="search-advanced-sidebar-end"}}
+
   </div>
 {{/d-section}}
